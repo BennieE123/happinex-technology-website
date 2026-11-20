@@ -1,0 +1,689 @@
+
+/* HAPPINEX OFFICIAL BRAND VARIABLES */
+
+:root {
+    --happinex-navy: #0B1F3A;
+    --happinex-blue: #1769E0;
+    --happinex-teal: #00A6A6;
+
+    --happinex-white: #FFFFFF;
+    --happinex-light-gray: #F3F5F7;
+    --happinex-charcoal: #1F2933;
+}
+
+/* GENERAL PAGE SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--happinex-white);
+    color: var(--happinex-charcoal);
+    line-height: 1.6;
+}
+/* HAPPINEX TYPOGRAPHY */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}
+
+/* HEADER SECTION */
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 15px;
+    color: #555555;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+main p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #555555;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+/* WEBSITE NAVIGATION */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    font-size: 13px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #1e7bff;
+}
+
+/* HOMEPAGE HERO SECTION */
+
+.hero {
+    background-color: #f4f7fb;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--happinex-blue);
+    color: white;
+}
+
+.btn-secondary {
+    border: var(--happinex-blue);
+    color: #1e7bff;
+}
+
+/* INTRODUCTION SECTION */
+
+.introduction {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.introduction h2 {
+    margin-bottom: 15px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+}
+
+/* ABOUT AND SERVICES SECTIONS */
+
+.section-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.about {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about h2,
+.services h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about p,
+.section-description {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #555555;
+    font-size: 17px;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #1e7bff;
+    font-weight: bold;
+}
+
+.services {
+    background-color: var(--happinex-light-gray);
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: left;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.service-card p {
+    color: #555555;
+    line-height: 1.7;
+}
+
+/* MOBILE ADJUSTMENT */
+
+@media (max-width: 768px) {
+    .service-list {
+        flex-direction: column;
+    }
+}
+
+/* HAPPINEX ACADEMY SECTION */
+
+.academy {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.course-card {
+    background-color: #f4f7fb;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.course-card h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.course-card p {
+    color: #555555;
+    line-height: 1.7;
+}
+
+.academy-button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 14px 28px;
+    background-color: var(--happinex-blue);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* MOBILE ACADEMY LAYOUT */
+
+@media (max-width: 768px) {
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* WEBSITE FOOTER */
+
+.site-footer {
+    background-color: var(--happinex-navy);
+    color: #ffffff;
+    padding: 50px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-about h2 {
+    margin-bottom: 8px;
+}
+
+.footer-about p {
+    color: #cccccc;
+    margin-bottom: 12px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-contact p {
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 35px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #555555;
+    text-align: center;
+    color: #cccccc;
+}
+
+/* MOBILE FOOTER */
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+/* HAPPINEX LOGO */
+
+.logo img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+/* =========================
+   PROJECTS / PORTFOLIO
+========================= */
+
+.projects {
+    padding: 60px 20px;
+    background-color: var(--happinex-light-gray);
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.project-card {
+    background-color: var(--happinex-white);
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 4px solid var(--happinex-blue);
+    box-shadow: 0 4px 12px rgba(11, 31, 58, 0.08);
+}
+
+.project-card h3 {
+    color: var(--happinex-navy);
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.project-card a {
+    display: inline-block;
+    background-color: var(--happinex-blue);
+    color: var(--happinex-white);
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+
+.project-card a:hover {
+    background-color: var(--happinex-navy);
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =================================
+   EXCEL COURSE PAGE STYLING
+================================= */
+
+.course-hero {
+    background-color: var(--happinex-navy);
+    color: var(--happinex-white);
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.course-hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.course-hero h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.course-hero h2 {
+    color: var(--happinex-teal);
+    margin-bottom: 20px;
+}
+
+.course-hero p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.section-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.course-overview,
+.course-learning,
+.course-audience,
+.course-practical,
+.course-benefits,
+.course-enrolment,
+.explore-courses {
+    padding: 65px 20px;
+}
+
+.course-overview h2,
+.course-learning h2,
+.course-audience h2,
+.course-practical h2,
+.course-benefits h2,
+.course-enrolment h2,
+.explore-courses h2 {
+    color: var(--happinex-navy);
+    margin-bottom: 20px;
+}
+
+.course-overview {
+    background-color: var(--happinex-white);
+}
+
+.course-learning {
+    background-color: var(--happinex-light-gray);
+}
+
+.learning-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.learning-item {
+    background-color: var(--happinex-white);
+    padding: 25px;
+    border-left: 4px solid var(--happinex-blue);
+    border-radius: 8px;
+}
+
+.learning-item h3 {
+    color: var(--happinex-navy);
+    margin-bottom: 12px;
+}
+
+.course-audience {
+    background-color: var(--happinex-white);
+}
+
+.course-audience ul,
+.course-benefits ul {
+    padding-left: 25px;
+    line-height: 2;
+}
+
+.course-practical {
+    background-color: var(--happinex-light-gray);
+}
+
+.course-benefits {
+    background-color: var(--happinex-white);
+}
+
+.course-enrolment {
+    background-color: var(--happinex-navy);
+    color: var(--happinex-white);
+    text-align: center;
+}
+
+.course-enrolment h2 {
+    color: var(--happinex-white);
+}
+
+.course-button {
+    display: inline-block;
+    background-color: var(--happinex-blue);
+    color: var(--happinex-white);
+    padding: 13px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.course-button:hover {
+    background-color: var(--happinex-teal);
+}
+
+.explore-courses {
+    background-color: var(--happinex-light-gray);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .course-hero h1 {
+        font-size: 32px;
+    }
+
+    .learning-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Academy Enrolment Button */
+
+.academy-enrolment .academy-button {
+    display: inline-block;
+    background-color: var(--happinex-blue);
+    color: var(--happinex-white);
+    padding: 14px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.academy-enrolment .academy-button:hover {
+    background-color: var(--happinex-teal);
+}
+/* RESPONSIVE MOBILE NAVIGATION */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--happinex-navy);
+}
+
+/* Mobile and tablet screens */
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header .container {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+    }
+
+    header nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        padding: 12px 0;
+        border-top: 1px solid #eeeeee;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+}

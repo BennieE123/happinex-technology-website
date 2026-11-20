@@ -1,0 +1,41 @@
+
+function welcomeVisitor() {
+    console.log("Welcome to Happinex Technology Limited!");
+}
+
+welcomeVisitor();
+// RESPONSIVE NAVIGATION
+
+const menuToggle = document.getElementById("menu-toggle");
+const mainNav = document.getElementById("main-nav");
+
+menuToggle.addEventListener("click", function () {
+
+    mainNav.classList.toggle("active");
+
+    const isOpen = mainNav.classList.contains("active");
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+
+});
+
+// Close the menu after selecting a navigation link
+
+mainNav.querySelectorAll("a").forEach(function (link) {
+
+    link.addEventListener("click", function () {
+        mainNav.classList.remove("active");
+        menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+    });
+
+});
+const heroTitle = document.getElementById("hero-title");
